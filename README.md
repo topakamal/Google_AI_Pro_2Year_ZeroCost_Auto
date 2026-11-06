@@ -1,50 +1,64 @@
 ========================================================================  
-  Google AI Pro (5 TB) 零成本两年 (US$0.00 -> 24个月) 全自动控制台  
+  Google AI Pro (5 TB) — Otomatisasi 2 Tahun Biaya Nol (US$0.00 -> 24 bulan)  
+  Konsol Otomatis Penuh  
 ========================================================================  
-  
 
-声明：该项目并非本人开发，仅作为圈内开源供大家分析学习使用  
-Disclaimer: I did not develop this project; it is provided as an open-source resource for the community to analyze and learn from.  
+**Pernyataan:** Proyek ini bukan buatan sendiri; proyek ini disediakan sebagai sumber terbuka untuk komunitas agar dapat dianalisis dan dipelajari.  
+Disclaimer: I did not develop this project; it is provided as an open-source resource for the community to analyze and learn from.
 
-【一、运行环境要求】
-1. Windows 10 / 11 系统
-2. 已安装 Google Chrome 浏览器（默认路径即可）
-3. 已安装 Python 3.10 或更高版本（安装时勾选 Add Python to PATH）
-4. 网络环境：本机开启美区（US）代理，或在控制台左侧填写代理模板
+---
 
-【二、快速启动步骤】
-1. 首次使用请双击运行：【1_首次运行_安装依赖并启动.bat】
-2. 之后日常使用直接双击：【2_启动控制台.bat】
-3. 浏览器会自动打开控制台页面：http://127.0.0.1:8765
+### 【Satu、 Persyaratan Lingkungan Berjalan】
+1. Sistem Windows 10 / 11
+2. Browser Google Chrome sudah terpasang (cukup jalur bawaan)
+3. Python 3.10 ke atas sudah terpasang (saat instalasi, centang "Add Python to PATH")
+4. Lingkungan jaringan: aktifkan proksi wilayah AS (US) di perangkat ini, atau isi templat proksi di sisi kiri konsol
 
-【三、自定义填写支付卡 & 跑号说明】
-1. 填写支付卡（必填）：
-   - 在网页左侧【全局配置与内联免税绑卡】区域，填入你自己的 Visa 或 Mastercard 外币卡：
-     * 卡号（16位数字）
-     * 有效期（月 / 年，如 08 / 29）
-     * 安全码（3位 CVC）
-     * 持卡人英文姓名
-     * 免税邮编默认已填好 97201（美国俄勒冈免税州），无需修改
-   - 填写后点击【💾 保存配置】。
-   - 注：脚本内置严格 0 元消费保护，仅在结账弹窗确认为 US$0.00 时才会点击订阅，全程 0 扣费。
+---
 
-2. 批量导入 Google 账号：
-   - 在网页右侧【批量放号导入区】粘贴账号（每行一个），支持以下任意格式：
-     * 邮箱----密码----辅助邮箱
-     * 邮箱----密码----辅助邮箱----2FA密钥
-     * 邮箱----密码----2FA密钥
-   - 点击【➕ 一键导入账号列表】。
+### 【Dua、 Langkah Mulai Cepat】
+1. Untuk penggunaan pertama, klik dua kali jalankan: **【1_首次运行_安装依赖并启动.bat】**
+2. Untuk penggunaan harian berikutnya, langsung klik dua kali: **【2_启动控制台.bat】**
+3. Browser akan otomatis membuka halaman konsol: `http://127.0.0.1:8765`
 
-3. 开始全自动执行：
-   - 点击单个账号右侧的【▶ 执行】或顶部的【▶ 批量全自动执行】。
-   - 脚本会自动完成：
-     Step 1: 自动登录 Google 并通过辅助邮箱 / 2FA 验证
-     Step 2: 内联免税绑卡 + 首层 12 个月免费包 (US$0.00)
-     Step 3: 叠加二层 6 个月免费包 (US$0.00 -> 18个月)
-     Step 4: 叠加三层 6 个月免费包 (US$0.00 -> 24个月封顶)
-     Step 5: 自动前往 Google Play 取消自动续订，锁死 2 年到期权益并截图验真
+---
 
+### 【Tiga、 Mengisi Kartu Pembayaran & Penjelasan Menjalankan Akun】
 
-# 卡网：https://faka.cdkey.si
-# 博客：https://blog.caowo.de
-# TG群：@Hello_Florence
+1. **Mengisi kartu pembayaran (wajib):**
+   - Di area kiri halaman web **【Konfigurasi Global & Pengikatan Kartu Bebas Pajak Inline】**, isi kartu Visa/Mastercard mata uang asing milikmu:
+     * Nomor kartu (16 digit)
+     * Masa berlaku (Bulan / Tahun, mis. 08 / 29)
+     * Kode keamanan (CVC 3 digit)
+     * Nama pemegang kartu dalam bahasa Inggris
+     * Kode pos bebas pajak sudah terisi default `97201` (negara bagian Oregon, AS), tidak perlu diubah
+   - Setelah diisi, klik **【💾 Simpan Konfigurasi】**.
+   - Catatan: skrip telah tertanam perlindungan konsumsi ketat Rp0; hanya saat popup pembayaran terkonfirmasi **US$0.00** tombol berlangganan akan diklik, sepanjang proses **0** pemotongan biaya.
+
+2. **Impor massal akun Google:**
+   - Di area kanan halaman web **【Area Impor Massal Akun】**, tempel akun (satu per baris); format berikut ini didukung:
+     * `email----password----email bantuan`
+     * `email----password----email bantuan----kunci 2FA`
+     * `email----password----kunci 2FA`
+   - Klik **【➕ Impor Daftar Akun Sekali Klik】**.
+
+3. **Mulai eksekusi otomatis penuh:**
+   - Klik **【▶ Eksekusi】** di sisi kanan masing-masing akun, atau **【▶ Eksekusi Otomatis Massal】** di bagian atas.
+   - Skrip akan otomatis menyelesaikan:
+     - Langkah 1: Login otomatis ke Google dan verifikasi melalui email bantuan / 2FA
+     - Langkah 2: Pengikatan kartu bebas pajak inline + paket gratis 12 bulan lapis pertama (US$0.00)
+     - Langkah 3: Menumpuk paket gratis 6 bulan lapis kedua (US$0.00 -> 18 bulan)
+     - Langkah 4: Menumpuk paket gratis 6 bulan lapis ketiga (US$0.00 -> layar atas 24 bulan)
+     - Langkah 5: Otomatis menuju Google Play untuk membatalkan perpanjangan otomatis, mengunci hak berakhir 2 tahun dan screenshot verifikasi
+
+---
+
+### 【Empat、 Peringatan & Catatan】
+- Proyek ini hanya untuk penelitian teknis dan pengujian otomatisasi. Harap patuhi Ketentuan Layanan Google dan gunakan manfaat yang tersedia secara wajar dan patuh.
+- Kartu yang mendukung otorisasi $0 (mis. kartu virtual, F1/kartu nyata wilayah AS) direkomendasikan.
+
+---
+
+**Kartu & Jaringan Kartu: https://faka.cdkey.si**  
+**Blog: https://blog.caowo.de**  
+**Grup TG: @Hello_Florence**
